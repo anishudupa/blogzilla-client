@@ -13,7 +13,6 @@ import {
 	Highlighter,
 	AlignLeft,
 } from "lucide-react";
-import { Blog } from "@/pages/Home";
 
 export default function Editor({
 	description,
