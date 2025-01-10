@@ -22,7 +22,6 @@ export default function UserBlogCard({
 	const blogString = convert(blog.content);
 	const navigate = useNavigate();
 
-	//TODO: ADD LOGIC TO UPDATE AND DELETE
 	const deleteBlog = async () => {
 		try {
 			const res = await API.delete(`/blogs/${blog._id}`);
@@ -48,7 +47,7 @@ export default function UserBlogCard({
 				<CardDescription>{blog.excerpt}</CardDescription>
 			</CardHeader>
 			<CardContent className="text-base">
-				<p>{blogString.substring(0, 350) + " ...read more"}</p>
+				<p>{blogString.substring(0, 251) + " ...read more"}</p>
 			</CardContent>
 			<CardFooter>
 				<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">

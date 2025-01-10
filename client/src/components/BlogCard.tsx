@@ -27,7 +27,7 @@ export default function BlogCard({ blog }: { blog: Blog }) {
 				<CardDescription>{blog.excerpt}</CardDescription>
 			</CardHeader>
 			<CardContent className="text-base">
-				<p>{blogString.substring(0, 1001) + " ...read more"}</p>
+				<p>{blogString.substring(0, 251) + " ...read more"}</p>
 			</CardContent>
 			<CardFooter className="flex items-center space-x-4">
 				<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
