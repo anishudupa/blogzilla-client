@@ -17,10 +17,12 @@ export default function ReadBlog() {
 	}, []);
 	return (
 		<>
-			<div
-				className="p-3"
-				dangerouslySetInnerHTML={{ __html: blog?.content! }}
-			/>
+			<div className="flex justify-center">
+				<div
+					className="p-3 w-full sm:max-w-[500px]"
+					dangerouslySetInnerHTML={{ __html: blog?.content! }}
+				/>
+			</div>
 		</>
 	);
 }
