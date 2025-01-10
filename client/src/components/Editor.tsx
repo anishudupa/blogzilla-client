@@ -51,38 +51,42 @@ export default function Editor({
 		<div className="flex flex-col gap-2">
 			<div className="flex gap-3 border rounded-sm p-2 border-white w-[900px]">
 				<BoldIcon
-					className={`hover:cursor-pointer ${
-						editor.isActive("bold") ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm  ${
+						editor.isActive("bold") ? "is-active bg-slate-400" : ""
 					}`}
 					onClick={() => editor.chain().focus().toggleBold().run()}
 				/>
 				<Italic
-					className={`hover:cursor-pointer ${
-						editor.isActive("italic") ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm ${
+						editor.isActive("italic") ? "is-active bg-slate-400" : ""
 					}`}
 					onClick={() => editor.chain().focus().toggleItalic().run()}
 				/>
 				<UnderlineIcon
-					className={`hover:cursor-pointer ${
-						editor.isActive("underline") ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm ${
+						editor.isActive("underline") ? "is-active bg-slate-400" : ""
 					}`}
 					onClick={() => editor.chain().focus().toggleUnderline().run()}
 				/>
 				<AlignCenter
-					className={`hover:cursor-pointer ${
-						editor.isActive({ textAlign: "center" }) ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm ${
+						editor.isActive({ textAlign: "center" })
+							? "is-active bg-slate-400"
+							: ""
 					}`}
 					onClick={() => editor.chain().focus().setTextAlign("center").run()}
 				/>
 				<AlignLeft
-					className={`hover:cursor-pointer ${
-						editor.isActive({ textAlign: "left" }) ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm ${
+						editor.isActive({ textAlign: "left" })
+							? "is-active bg-slate-400"
+							: ""
 					}`}
 					onClick={() => editor.chain().focus().setTextAlign("left").run()}
 				/>
 				<Highlighter
-					className={`hover:cursor-pointer ${
-						editor.isActive("highlight") ? "is-active" : ""
+					className={`hover:cursor-pointer rounded-sm ${
+						editor.isActive("highlight") ? "is-active bg-slate-400" : ""
 					}`}
 					onClick={() => editor.chain().focus().toggleHighlight().run()}
 				/>
