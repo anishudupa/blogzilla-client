@@ -19,7 +19,7 @@ export default function ReadBlog() {
 		<>
 			<div className="flex justify-center">
 				<div
-					className="p-3 w-full sm:max-w-[500px]"
+					className="p-3 w-full sm:max-w-[900px]"
 					dangerouslySetInnerHTML={{ __html: blog?.content! }}
 				/>
 			</div>
